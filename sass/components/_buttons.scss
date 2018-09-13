@@ -1,0 +1,283 @@
+.button-box {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.btn-round {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
+    border-radius: 10rem;
+    transition: all .2s;
+    padding: 1.5rem 4rem;
+  }
+
+  &:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
+  }
+
+  &--light-green {
+    background-color: $color-green-light;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-green-light;
+    }
+  }
+
+  &--mid-green {
+    background-color: $color-green-mid;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-green-mid;
+    }
+  }
+
+
+  &--dark-green {
+    background-color: $color-green-dark;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-green-dark;
+    }
+  }
+
+  &--light-red {
+    background-color: $color-red-light;
+    color: $color-white;
+
+    &::after{
+      background-color:$color-red-light;
+    }
+  }
+
+  &--mid-red {
+    background-color: $color-red-mid;
+    color: $color-white;
+
+    &::after{
+      background-color:$color-red-mid;
+    }
+  }
+
+  &--dark-red {
+    background-color: $color-red-dark;
+    color: $color-white;
+
+    &::after{
+      background-color:$color-red-dark;
+    }
+  }
+
+  &--light-blue {
+    background-color: $color-blue-light;
+    color: $color-white;
+
+    &::after{
+      background-color:$color-blue-light;
+    }
+  }
+
+  &--mid-blue {
+    background-color: $color-blue-mid;
+    color: $color-white;
+
+    &::after{
+      background-color:$color-blue-mid;
+    }
+  }
+
+  &--dark-blue {
+    background-color: $color-blue-dark;
+    color: $color-white;
+
+    &::after{
+      background-color:$color-blue-dark;
+    }
+  }
+
+  &--light-purple {
+    background-color: $color-purple-light;
+    color: $color-white;
+
+    &::after{
+      background-color:$color-purple-light;
+    }
+  }
+
+  &--mid-purple {
+    background-color: $color-purple-mid;
+    color: $color-white;
+
+    &::after{
+      background-color:$color-purple-mid;
+    }
+  }
+
+  &--dark-purple {
+    background-color: $color-purple-dark;
+    color: $color-white;
+
+    &::after{
+      background-color:$color-purple-dark;
+    }
+  }
+
+  &--light-yellow {
+    background-color: $color-yellow-light;
+    color: $color-black;
+
+    &::after{
+      background-color:$color-yellow-light;
+    }
+  }
+
+  &--mid-yellow {
+    background-color: $color-yellow-mid;
+    color: $color-black;
+
+    &::after{
+      background-color:$color-yellow-mid;
+    }
+  }
+
+  &--dark-yellow {
+    background-color: $color-yellow-dark;
+    color: $color-black;
+
+    &::after{
+      background-color:$color-yellow-dark;
+    }
+  }
+
+  &--light-orange {
+    background-color: $color-orange-light;
+    color: $color-black;
+
+    &::after{
+      background-color:$color-orange-light;
+    }
+  }
+
+  &--mid-orange {
+    background-color: $color-orange-mid;
+    color: $color-black;
+
+    &::after{
+      background-color:$color-orange-mid;
+    }
+  }
+
+  &--dark-orange {
+    background-color: $color-orange-dark;
+    color: $color-black;
+
+    &::after{
+      background-color:$color-orange-dark;
+    }
+  }
+
+  &--black {
+    background-color: $color-black;
+    color: $color-white;
+    &::after {
+      background-color: $color-black;
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-black;
+    box-shadow: 0 0 0 .2rem rgba($color-black, 1);
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--grey {
+    background-color: $color-grey-mid;
+    color: $color-white;
+    &::after {
+      background-color: $color-grey-mid;
+    }
+  }
+}
+
+.btn-square {
+  &:link,
+  &:visited{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+    padding: 1rem 2rem;
+    background-size: 225%;
+    transition: all .4s;
+    color: $color-black;
+  }
+
+  &:hover,
+  &:active {
+    background-position: 100%;
+  }
+
+  &--white {
+    &:link,
+    &:visited {
+      box-shadow: 0 0 0 .2rem rgba($color-black, 1);
+      background-image: linear-gradient(120deg, $color-black, transparent 0%, transparent 50%, $color-black 50%);
+    }
+
+    &:hover,
+    &:active {
+      color: $color-white;
+    }
+  }
+
+  &--black {
+    &:link,
+    &:visited {
+      border: 2px solid rgba(transparent, 1);
+      color: $color-white;
+      background-image: linear-gradient(120deg, $color-black, $color-black 0%, $color-black 50%, transparent 50%);
+    }
+
+    &:hover,
+    &:active {
+      border: 2px solid rgba($color-black, 1);
+      color: $color-black;
+    }
+  }
+
+  &--grey {
+    &:link,
+    &:visited {
+      border: 2px solid rgba($color-grey-mid, 1);
+      color: $color-white;
+      background-image: linear-gradient(120deg, $color-grey-mid, $color-grey-mid 0%, $color-grey-mid 50%, transparent 50%);
+    }
+
+    &:hover,
+    &:active {
+      border: 2px solid rgba($color-grey-mid, 1);
+      color: $color-black;
+    }
+  }
+
+}

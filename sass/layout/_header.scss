@@ -4,8 +4,14 @@
   rgba($color-black, 0.8),
   rgba($color-white, 0.8));
   background-size: cover;
-  
-  &__text-box {
+  background-position: top;
+  position: relative;
 
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 }
