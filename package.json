@@ -1,0 +1,14 @@
+{
+  "name": "pretty_components",
+  "version": "1.0.0",
+  "description": "Buttons and layouts for future use",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Thomas Chirayil",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

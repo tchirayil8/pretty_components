@@ -1,0 +1,11 @@
+.header {
+  height: 20vh;
+  background-image: linear-gradient(to right,
+  rgba($color-black, 0.8),
+  rgba($color-white, 0.8));
+  background-size: cover;
+  
+  &__text-box {
+
+  }
+}

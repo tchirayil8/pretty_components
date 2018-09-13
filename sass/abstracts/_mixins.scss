@@ -1,0 +1,11 @@
+/* adds a pseudoelement after the element
+so that the container of floated elements
+clear the floats*/
+
+@mixin clearfix{
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
