@@ -60,115 +60,115 @@ body {
 .btn-round--light-green {
   background-color: #5FFB5F;
   color: #fff; }
-  .btn-round--light-green::after {
+  .btn-round--light-green:after {
     background-color: #5FFB5F; }
 
 .btn-round--mid-green {
   background-color: #30BA30;
   color: #fff; }
-  .btn-round--mid-green::after {
+  .btn-round--mid-green:after {
     background-color: #30BA30; }
 
 .btn-round--dark-green {
   background-color: #167D16;
   color: #fff; }
-  .btn-round--dark-green::after {
+  .btn-round--dark-green:after {
     background-color: #167D16; }
 
 .btn-round--light-red {
   background-color: #EB4B4B;
   color: #fff; }
-  .btn-round--light-red::after {
+  .btn-round--light-red:after {
     background-color: #EB4B4B; }
 
 .btn-round--mid-red {
   background-color: #E31111;
   color: #fff; }
-  .btn-round--mid-red::after {
+  .btn-round--mid-red:after {
     background-color: #E31111; }
 
 .btn-round--dark-red {
   background-color: #A11616;
   color: #fff; }
-  .btn-round--dark-red::after {
+  .btn-round--dark-red:after {
     background-color: #A11616; }
 
 .btn-round--light-blue {
   background-color: #4B4EEB;
   color: #fff; }
-  .btn-round--light-blue::after {
+  .btn-round--light-blue:after {
     background-color: #4B4EEB; }
 
 .btn-round--mid-blue {
   background-color: #1811E3;
   color: #fff; }
-  .btn-round--mid-blue::after {
+  .btn-round--mid-blue:after {
     background-color: #1811E3; }
 
 .btn-round--dark-blue {
   background-color: #1F16A1;
   color: #fff; }
-  .btn-round--dark-blue::after {
+  .btn-round--dark-blue:after {
     background-color: #1F16A1; }
 
 .btn-round--light-purple {
   background-color: #B84BEB;
   color: #fff; }
-  .btn-round--light-purple::after {
+  .btn-round--light-purple:after {
     background-color: #B84BEB; }
 
 .btn-round--mid-purple {
   background-color: #A411E3;
   color: #fff; }
-  .btn-round--mid-purple::after {
+  .btn-round--mid-purple:after {
     background-color: #A411E3; }
 
 .btn-round--dark-purple {
   background-color: #7516A1;
   color: #fff; }
-  .btn-round--dark-purple::after {
+  .btn-round--dark-purple:after {
     background-color: #7516A1; }
 
 .btn-round--light-yellow {
   background-color: #EBE84B;
   color: #000; }
-  .btn-round--light-yellow::after {
+  .btn-round--light-yellow:after {
     background-color: #EBE84B; }
 
 .btn-round--mid-yellow {
   background-color: #E0E311;
   color: #000; }
-  .btn-round--mid-yellow::after {
+  .btn-round--mid-yellow:after {
     background-color: #E0E311; }
 
 .btn-round--dark-yellow {
-  background-color: #A19F16;
+  background-color: #7516A1;
   color: #000; }
-  .btn-round--dark-yellow::after {
-    background-color: #A19F16; }
+  .btn-round--dark-yellow:after {
+    background-color: #7516A1; }
 
 .btn-round--light-orange {
   background-color: #EBB34B;
   color: #000; }
-  .btn-round--light-orange::after {
+  .btn-round--light-orange:after {
     background-color: #EBB34B; }
 
 .btn-round--mid-orange {
   background-color: #E39611;
   color: #000; }
-  .btn-round--mid-orange::after {
+  .btn-round--mid-orange:after {
     background-color: #E39611; }
 
 .btn-round--dark-orange {
   background-color: #B87B09;
   color: #000; }
-  .btn-round--dark-orange::after {
+  .btn-round--dark-orange:after {
     background-color: #B87B09; }
 
 .btn-round--black {
   background-color: #000;
   color: #fff; }
-  .btn-round--black::after {
+  .btn-round--black:after {
     background-color: #000; }
 
 .btn-round--white {
@@ -181,7 +181,7 @@ body {
 .btn-round--grey {
   background-color: #383838;
   color: #fff; }
-  .btn-round--grey::after {
+  .btn-round--grey:after {
     background-color: #383838; }
 
 .btn-square:link, .btn-square:visited {
@@ -221,6 +221,29 @@ body {
 .btn-square--grey:hover, .btn-square--grey:active {
   border: 2px solid #383838;
   color: #000; }
+
+.btn-explode, .btn-explode:link, .btn-explode:visited {
+  perspective: 10rem;
+  -moz-perspective: 10rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10rem;
+  transition: all .2s;
+  padding: 1.5rem 4rem; }
+
+.btn-explode:hover, .btn-explode:active {
+  transform: rotateX(180deg);
+  background-color: orangered;
+  text-transform: rotateX(0deg); }
+
+.btn-explode--orangered {
+  background-color: transparent;
+  color: #000;
+  box-shadow: 0 0 0 .2rem orangered; }
 
 .header {
   height: 20vh;

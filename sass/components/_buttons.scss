@@ -3,6 +3,15 @@
   margin: 1rem auto;
 }
 
+@mixin button-round-color($btn, $font){
+  background-color: $btn;
+  color: $font;
+
+  &:after {
+    background-color: $btn;
+  }
+}
+
 .btn-round {
   &,
   &:link,
@@ -30,174 +39,80 @@
   }
 
   &--light-green {
-    background-color: $color-green-light;
-    color: $color-white;
-
-    &::after {
-      background-color: $color-green-light;
-    }
+    @include button-round-color($color-green-light, $color-white);
   }
 
   &--mid-green {
-    background-color: $color-green-mid;
-    color: $color-white;
-
-    &::after {
-      background-color: $color-green-mid;
-    }
+    @include button-round-color($color-green-mid, $color-white);
   }
 
 
   &--dark-green {
-    background-color: $color-green-dark;
-    color: $color-white;
-
-    &::after {
-      background-color: $color-green-dark;
-    }
+    @include button-round-color($color-green-dark, $color-white);
   }
 
   &--light-red {
-    background-color: $color-red-light;
-    color: $color-white;
-
-    &::after{
-      background-color:$color-red-light;
-    }
+    @include button-round-color($color-red-light, $color-white);
   }
 
   &--mid-red {
-    background-color: $color-red-mid;
-    color: $color-white;
-
-    &::after{
-      background-color:$color-red-mid;
-    }
+    @include button-round-color($color-red-mid, $color-white);
   }
 
   &--dark-red {
-    background-color: $color-red-dark;
-    color: $color-white;
-
-    &::after{
-      background-color:$color-red-dark;
-    }
+    @include button-round-color($color-red-dark, $color-white);
   }
 
   &--light-blue {
-    background-color: $color-blue-light;
-    color: $color-white;
-
-    &::after{
-      background-color:$color-blue-light;
-    }
+    @include button-round-color($color-blue-light, $color-white);
   }
 
   &--mid-blue {
-    background-color: $color-blue-mid;
-    color: $color-white;
-
-    &::after{
-      background-color:$color-blue-mid;
-    }
+    @include button-round-color($color-blue-mid, $color-white);
   }
 
   &--dark-blue {
-    background-color: $color-blue-dark;
-    color: $color-white;
-
-    &::after{
-      background-color:$color-blue-dark;
-    }
+    @include button-round-color($color-blue-dark, $color-white);
   }
 
   &--light-purple {
-    background-color: $color-purple-light;
-    color: $color-white;
-
-    &::after{
-      background-color:$color-purple-light;
-    }
+    @include button-round-color($color-purple-light, $color-white);
   }
 
   &--mid-purple {
-    background-color: $color-purple-mid;
-    color: $color-white;
-
-    &::after{
-      background-color:$color-purple-mid;
-    }
+    @include button-round-color($color-purple-mid, $color-white);
   }
 
   &--dark-purple {
-    background-color: $color-purple-dark;
-    color: $color-white;
-
-    &::after{
-      background-color:$color-purple-dark;
-    }
+    @include button-round-color($color-purple-dark, $color-white);
   }
 
   &--light-yellow {
-    background-color: $color-yellow-light;
-    color: $color-black;
-
-    &::after{
-      background-color:$color-yellow-light;
-    }
+    @include button-round-color($color-yellow-light, $color-black);
   }
 
   &--mid-yellow {
-    background-color: $color-yellow-mid;
-    color: $color-black;
-
-    &::after{
-      background-color:$color-yellow-mid;
-    }
+    @include button-round-color($color-yellow-mid, $color-black);
   }
 
   &--dark-yellow {
-    background-color: $color-yellow-dark;
-    color: $color-black;
-
-    &::after{
-      background-color:$color-yellow-dark;
-    }
+    @include button-round-color($color-purple-dark, $color-black);
   }
 
   &--light-orange {
-    background-color: $color-orange-light;
-    color: $color-black;
-
-    &::after{
-      background-color:$color-orange-light;
-    }
+    @include button-round-color($color-orange-light, $color-black);
   }
 
   &--mid-orange {
-    background-color: $color-orange-mid;
-    color: $color-black;
-
-    &::after{
-      background-color:$color-orange-mid;
-    }
+    @include button-round-color($color-orange-mid, $color-black);
   }
 
   &--dark-orange {
-    background-color: $color-orange-dark;
-    color: $color-black;
-
-    &::after{
-      background-color:$color-orange-dark;
-    }
+    @include button-round-color($color-orange-dark, $color-black);
   }
 
   &--black {
-    background-color: $color-black;
-    color: $color-white;
-    &::after {
-      background-color: $color-black;
-    }
+    @include button-round-color($color-black, $color-white);
   }
 
   &--white {
@@ -211,11 +126,7 @@
   }
 
   &--grey {
-    background-color: $color-grey-mid;
-    color: $color-white;
-    &::after {
-      background-color: $color-grey-mid;
-    }
+    @include button-round-color($color-grey-mid, $color-white);
   }
 }
 
@@ -280,4 +191,36 @@
     }
   }
 
+}
+
+.btn-explode {
+  &,
+  &:link,
+  &:visited {
+    perspective: 10rem;
+    -moz-perspective: 10rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
+    border-radius: 10rem;
+    transition: all .2s;
+    padding: 1.5rem 4rem;
+  }
+
+  &:hover,
+  &:active {
+    transform: rotateX(180deg);
+    background-color: orangered;
+    text-transform: rotateX(0deg);
+
+  }
+
+  &--orangered {
+    background-color: transparent;
+    color: $color-black;
+    box-shadow: 0 0 0 .2rem orangered;
+  }
 }
